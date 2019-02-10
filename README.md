@@ -4,10 +4,9 @@ Your submission must run on the CS Lab computers and include a detailed README.m
 explaining how to execute your program. The code must be well formatted and commented.
 You may use any programming language.
 
-## Available Problems
-* Textbook Chapter 6.1: 11
-* Textbook Chapter 6.3: 6
-* Textbook Chapter 6.3: 10
-* Textbook Chapter 6.4: 11
+## Problem Statement
+### Textbook Chapter 6.4.11
+Write a program for constructing a 2-3 tree for a given list of n integers
 
 ## Usage
+`>python FennellTree23.py [integer list length n]`
