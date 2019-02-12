@@ -52,3 +52,17 @@ for integer in range(n_list_length):
 
 for entry in n_list:
     print(entry)
+
+# Node Object
+# list of keys
+# list of links to children
+# pointer to parent
+# function to quickly give degree of node
+# function to explode and regroup?
+
+class Node:
+    key_list = []
+    child_link_list = []
+    #parent_link
+    def NodeDegree(self):
+        return len(self.key_list)
