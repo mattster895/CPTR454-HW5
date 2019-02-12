@@ -64,5 +64,36 @@ class Node:
     key_list = []
     child_link_list = []
     #parent_link
+    def __init__(self,key):
+        self.key_list.append(key)
+        print("This node has been created with ",key," as its key.")
     def NodeDegree(self):
         return len(self.key_list)
+    def AddKey(self,key):
+        if(self.NodeDegree()==1):
+            if(key<self.key_list[0]):
+                self.key_list.insert(0,key)
+            else:
+                self.key_list.append(key)
+        elif(self.NodeDegree()==2):
+            if(key<self.key_list[0]):
+                self.key_list.insert(0,key)
+            elif(key<self.key_list[1]):
+                self.key_list.insert(1,key)
+            else:
+                self.key_list.append(key)
+        elif(self.NodeDegree()==3):
+            print("NODE IS FULL")
+    def PrintKeyList(self):
+        print("Printing Keys:")
+        for key in self.key_list:
+            print(key)
+
+
+
+start_node = Node(n_list[0])
+start_node.PrintKeyList()
+start_node.AddKey(n_list[1])
+start_node.PrintKeyList()
+start_node.AddKey(n_list[2])
+start_node.PrintKeyList()
